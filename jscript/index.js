@@ -6,16 +6,17 @@ var player;
 var wrong;
 var level_count;
 var colors = ["red", "green", "yellow", "blue"];
-$(document).keydown(function (event) {
-  if (event.key == "s") {
+$(".start").click(function (event) {
     $("h1").html(pl);
     comp = "";
     player = "";
     wrong = false;
     level_count=1;
     nextSequence();
+    $(".start").css("visibility","hidden");
     $("h2").css("visibility","visible");
-  }
+    // $(".start").hide();
+    // $("h2").show();
 });
 $(".btn").click(function () {
   if (wrong == false) {
@@ -50,7 +51,10 @@ function check_ans() {
     }
   } else {
     $("h1").html(go);
-    $("h2").html("Press 's' to restart");
+    $("h2").css("visibility","hidden");
+    $(".start").css("visibility","visible");
+    // $("h2").hide();
+    // $(".start").show();
     var audio = new Audio("sounds/wrong.mp3");
     audio.play();
     wrong=true;
