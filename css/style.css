@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  background-color: bisque;
+}
+h1 {
+  font-size: 4rem;
+  color: rebeccapurple;
+  margin-bottom: 0.5rem;
+}
+h2{
+  font-size: 2rem;
+  color: rebeccapurple;
+  visibility: hidden;
+  margin-top: 1rem;
+}
+.btn {
+  width: 9rem;
+  height: 9rem;
+  margin: 2rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: 2rem;
+}
+
+.pressed {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
